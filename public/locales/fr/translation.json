@@ -1,0 +1,119 @@
+{
+  "mode": "Mode Sombre",
+  "mock": {
+    "Name": "Nom",
+    "SuperAdmin": "Super Administrateur"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe"
+  },
+  "search": {
+    "placeholder": "Rechercher par (ID, Nom, Email, Numéro de téléphone)...",
+    "DatePlaceholder": "Choisir une date",
+    "uploadHint": "Cliquez ou faites glisser un fichier dans cette zone pour le téléverser",
+    "fileUploadInfo": "Vous pouvez télécharger des fichiers aux formats suivants : image/png, image/jpeg, image/jpg. La taille maximale du fichier est de 5 Mo.",
+    "enterEmail": "Entrez votre email",
+    "enterPassword": "Entrez votre mot de passe"
+  },
+  "error": {
+    "uploadError": "Veuillez fournir un avatar",
+    "emailRequired": "L'email est requis",
+    "passwordRequired": "Le mot de passe est requis",
+    "fieldRequired": "Le champ est requis !",
+    "chooseOperator": "Veuillez choisir un opérateur !",
+    "required": "Requis !",
+    "filterExists": "Le filtre existe déjà !",
+    "nameRequired": "Le nom est requis",
+    "invalidEmail": "Email invalide",
+    "phoneNumberRequired": "Le numéro de téléphone est requis",
+    "fileUploadFailed": "Échec du téléchargement du fichier :",
+    "emptyValues": "Toutes les valeurs sont vides, ajoutez-en au moins une !",
+    "userDeleteWarning": "L'utilisateur que vous êtes sur le point de supprimer ne peut pas être récupéré !",
+    "deleteConfirmation": "Tous les utilisateurs sélectionnés seront définitivement supprimés. Êtes-vous sûr ?"
+  },
+  "messages": {
+    "loginSuccess": "Vous êtes connecté avec succès !",
+    "filterAddedSuccess": "Filtre ajouté avec succès !",
+    "userAddedSuccess": "Utilisateur ajouté avec succès !",
+    "fileUploadedSuccess": "Fichier téléchargé avec succès !",
+    "userUpdatedSuccess": "Utilisateur mis à jour avec succès !"
+  },
+  "main": {
+    "NotFound": "Page non trouvée !",
+    "Go": "Aller aux utilisateurs"
+  },
+  "navbar": {
+    "Profile": "Profil",
+    "Dark mode": "Mode Sombre",
+    "Logout": "Se déconnecter"
+  },
+  "sidebar": {
+    "Dashboard": "Tableau de bord",
+    "Users": "Utilisateurs",
+    "Students": "Étudiants",
+    "Teachers": "Enseignants",
+    "Admins": "Administrateurs",
+    "Courses": "Cours",
+    "Invoices": "Factures"
+  },
+  "fields": {
+    "id": "Id",
+    "email": "Email",
+    "created_at": "Date de création",
+    "updated_at": "Date de mise à jour",
+    "name": "Nom",
+    "phone_number": "Numéro de téléphone",
+    "actions": "Actions",
+    "avatar": "Avatar",
+    "password": "Mot de passe"
+  },
+  "buttons": {
+    "newUser": "Nouvel Utilisateur",
+    "filter": "Filtre",
+    "columns": "Colonnes",
+    "filters": "Filtres",
+    "login": "Connexion",
+    "reset": "Réinitialiser",
+    "submit": "Soumettre",
+    "create": "Créer",
+    "addFilter": "Ajouter un Filtre",
+    "confirmDelete": "Confirmer la suppression",
+    "cancel": "Annuler"
+  },
+  "actions": {
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "preview": "Aperçu",
+    "deleteSelected": "élément"
+  },
+  "titles": {
+    "createNewUser": "Créer un Nouvel Utilisateur",
+    "editUser": "Modifier l'Utilisateur",
+    "previewUser": "Aperçu de l'Utilisateur",
+    "login": "Connexion"
+  },
+  "filters": {
+    "id": {
+      "eq": "Égal à",
+      "lt": "Inférieur à",
+      "gt": "Supérieur à",
+      "lt&eq": "Inférieur ou égal à",
+      "gt&eq": "Supérieur ou égal à"
+    },
+    "text": {
+      "eq": "Est",
+      "neq": "N’est pas",
+      "ilike": "Contient",
+      "startWith": "Commence par",
+      "endWith": "Se termine par"
+    },
+    "date": {
+      "eq": "Est",
+      "neq": "N’est pas",
+      "lt": "Avant",
+      "gt": "Après"
+    }
+  }
+}

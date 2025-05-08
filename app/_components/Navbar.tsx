@@ -1,18 +1,21 @@
-import LanguageToggler from "./LanguageTogglor";
+import NavbarItem from "./NavbarItem";
+import LanguageToggler from "./LanguageToggler";
 
 function Navbar() {
 	return (
-		<div className='w-auto'>
-			<ul className='flex gap-x-[8px]'>
-				<li className='p-[16px]'>Home</li>
-				<li className='p-[16px]'>Courses</li>
-				<li className='p-[16px]'>About</li>
-				<li className='p-[16px]'>Contact</li>
-				<li className='p-[16px]'>Become an Instructor</li>
-			</ul>
-			<div className='flex '>
-				{/* Currency toggler */}
-				<LanguageToggler />
+		<div className=' bg-[#1D2026]'>
+			<div className='w-auto flex justify-between mx-[32px] h-[53px]'>
+				<ul className='flex gap-x-[8px] h-[52px]'>
+					<NavbarItem href='/' content='Home' />
+					<NavbarItem href='/courses' content='Courses' />
+					<NavbarItem href='/about' content='About' />
+					<NavbarItem href='/contact' content='Contact' />
+					<NavbarItem href='/instructor' content='Become an Instructor' />
+				</ul>
+				<div className='flex items-center'>
+					{/* Currency toggler */}
+					<LanguageToggler />
+				</div>
 			</div>
 		</div>
 	);
