@@ -1,0 +1,119 @@
+{
+  "mode": "الوضع المظلم",
+  "mock": {
+    "Name": "اسم",
+    "SuperAdmin": "المشرف الفائق"
+  },
+  "language": {
+    "en": "الإنجليزية",
+    "fr": "الفرنسية",
+    "ar": "العربية"
+  },
+  "search": {
+    "placeholder": "ابحث بواسطة (المعرف، الاسم، البريد الإلكتروني، رقم الهاتف)...",
+    "DatePlaceholder": "اختر التاريخ",
+    "uploadHint": "انقر أو اسحب الملف إلى هذه المنطقة لتحميله",
+    "fileUploadInfo": "يمكنك تحميل الملفات بالتنسيقات التالية: image/png، image/jpeg، image/jpg. الحد الأقصى لحجم الملف هو 5 ميغابايت.",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "enterPassword": "أدخل كلمة المرور الخاصة بك"
+  },
+  "error": {
+    "uploadError": "الرّجاء توفير صورة رمزيّة",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "passwordRequired": "كلمة المرور مطلوبة",
+    "fieldRequired": "الحقل مطلوب!",
+    "chooseOperator": "يرجى اختيار عامل!",
+    "required": "مطلوب!",
+    "filterExists": "الفلتر موجود بالفعل!",
+    "nameRequired": "الاسم مطلوب",
+    "invalidEmail": "البريد الإلكتروني غير صالح",
+    "phoneNumberRequired": "رقم الهاتف مطلوب",
+    "fileUploadFailed": "فشل رفع الملف:",
+    "emptyValues": "جميع القيم فارغة، أضف على الأقل واحدة!",
+    "userDeleteWarning": "المستخدم الذي على وشك حذفه لا يمكن استرجاعه!",
+    "deleteConfirmation": "جميع المستخدمين المحددين سيتم حذفهم نهائيًا. هل أنت متأكد؟"
+  },
+  "messages": {
+    "loginSuccess": "تم تسجيل الدخول بنجاح!",
+    "filterAddedSuccess": "تم إضافة الفلتر بنجاح!",
+    "userAddedSuccess": "تم إضافة المستخدم بنجاح!",
+    "fileUploadedSuccess": "تم رفع الملف بنجاح!",
+    "userUpdatedSuccess": " تم تحديث المستخدم بنجاح!"
+  },
+  "main": {
+    "NotFound": "صفحة غير موجودة!",
+    "Go": "انتقل الى المستخدمين"
+  },
+  "navbar": {
+    "Profile": "الملف الشخصي",
+    "Dark mode": "الوضع المظلم",
+    "Logout": "تسجيل الخروج"
+  },
+  "sidebar": {
+    "Dashboard": "لوحة القيادة",
+    "Users": "المستخدمين",
+    "Students": "الطلاب",
+    "Teachers": "المعلمين",
+    "Admins": "المشرفين",
+    "Courses": "الدورات",
+    "Invoices": "الفواتير"
+  },
+  "fields": {
+    "id": "المعرف",
+    "email": "البريد الإلكتروني",
+    "created_at": "تاريخ الإنشاء",
+    "updated_at": "تاريخ التحديث",
+    "name": "الاسم",
+    "phone_number": "رقم الهاتف",
+    "actions": "الإجراءات",
+    "avatar": "الصورة الرمزية",
+    "password": "كلمة المرور"
+  },
+  "buttons": {
+    "newUser": "مستخدم جديد",
+    "filter": "تصفية",
+    "columns": "أعمدة",
+    "filters": "فلاتر",
+    "login": "تسجيل الدخول",
+    "reset": "إعادة تعيين",
+    "submit": "إرسال",
+    "create": "إنشاء",
+    "addFilter": "إضافة فلتر",
+    "confirmDelete": "تأكيد الحذف",
+    "cancel": "إلغاء"
+  },
+  "actions": {
+    "delete": "حذف",
+    "edit": "تعديل",
+    "preview": "معاينة",
+    "deleteSelected": "عنصر"
+  },
+  "titles": {
+    "createNewUser": "إنشاء مستخدم جديد",
+    "editUser": "تعديل المستخدم",
+    "previewUser": "معاينة المستخدم",
+    "login": "تسجيل الدخول"
+  },
+  "filters": {
+    "id": {
+      "eq": "يساوي",
+      "lt": "أقل من",
+      "gt": "أكبر من",
+      "lt&eq": "أقل من أو يساوي",
+      "gt&eq": "أكبر من أو يساوي"
+    },
+    "text": {
+      "eq": "هو",
+      "neq": "ليس",
+      "ilike": "يحتوي على",
+      "startWith": "يبدأ بـ",
+      "endWith": "ينتهي بـ"
+    },
+    "date": {
+      "eq": "هو",
+      "neq": "ليس",
+      "lt": "قبل",
+      "gt": "بعد"
+    }
+  }
+}
