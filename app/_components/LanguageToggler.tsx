@@ -10,24 +10,17 @@ const LanguageToggler = () => {
 
 	return (
 		<div
-			className='shared_language_toggler h-[22px] flex flex-col gap-2'
-			style={open ? { height: "34px !important" } : {}}
+			className='menu-item flex gap-[6px] justify-between items-center'
+			onClick={() => setOpen(!open)}
 		>
-			<div
-				className='menu-item flex gap-6 justify-between items-center'
-				onClick={() => setOpen(!open)}
-			>
-				{/* {t(`language.${i18n.language}`)} */}
-				English
-				<MdKeyboardArrowDown
-					className='icon h-[12px] w-[12px]'
-					style={
-						open
-							? { transform: "rotate(180deg)" }
-							: { transform: "rotate(0deg)" }
-					}
-				/>
-			</div>
+			{/* {t(`language.${i18n.language}`)} */}
+			English
+			<MdKeyboardArrowDown
+				className='icon h-[12px] w-[12px]'
+				style={
+					open ? { transform: "rotate(180deg)" } : { transform: "rotate(0deg)" }
+				}
+			/>
 		</div>
 	);
 };

@@ -1,4 +1,4 @@
-import Spinner from "./_components/Spinner";
+import Spinner from "./_components/_Shared/Spinner";
 
 function loading() {
 	return (

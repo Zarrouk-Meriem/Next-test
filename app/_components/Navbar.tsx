@@ -3,7 +3,7 @@ import LanguageToggler from "./LanguageToggler";
 
 function Navbar() {
 	return (
-		<div className=' bg-[#1D2026]'>
+		<div className=' bg-[#1D2026] text-[#A1A5B3]'>
 			<div className='w-auto flex justify-between mx-[32px] h-[53px]'>
 				<ul className='flex gap-x-[8px] h-[52px]'>
 					<NavbarItem href='/' content='Home' />

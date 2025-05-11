@@ -8,8 +8,8 @@ function HeroSection({ data }: { readonly data: HeroSectionProps }) {
 	console.log(data);
 	const imageURL = "http://localhost:1337" + image?.url;
 	return (
-		<header className='flex justify-end gap-[72px] '>
-			<div className='flex flex-col gap-[32px] justify-center pl-[200px] pb-[100px] pr-0 w-[1050px] '>
+		<header className='flex justify-end	 '>
+			<div className='flex flex-col gap-[32px] justify-center pl-[460px] pb-[100px] pr-[90px] w-[1050px] '>
 				<h1 className='text-[52px] leading-[50px] font-[600]'>{heading}</h1>
 				<p className='text-[18px] font-[400] leading-[25px] text-[#4E5566]'>
 					{subheading}
@@ -21,7 +21,7 @@ function HeroSection({ data }: { readonly data: HeroSectionProps }) {
 					{link?.text}
 				</Link>
 			</div>
-			<div className='relative w-[100%] h-[65vh]'>
+			<div className='relative flex items-end w-[50%] h-[50vh]'>
 				<Image
 					src={imageURL}
 					alt={image?.alternativeText ?? "no alternative text"}

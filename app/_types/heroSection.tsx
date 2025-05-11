@@ -7,7 +7,7 @@ export interface Image {
 
 export interface Link {
 	id?: number;
-	url?: string;
+	url?: string | undefined;
 	text?: string;
 	isExternal?: boolean;
 }
