@@ -1,0 +1,120 @@
+{
+  "mode": "Dark Mode",
+  "mock": {
+    "Name": "Name",
+    "SuperAdmin": "Super Admin"
+  },
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic"
+  },
+  "search": {
+    "placeholder": "Search by (ID, Name, Email, Phone Number)...",
+    "DatePlaceholder": "Select date",
+    "uploadHint": "Click or drag file to this area to upload",
+    "fileUploadInfo": "You can upload files in the following formats: image/png, image/jpeg, image/jpg. The maximum file size is 5 MB.",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password"
+  },
+  "error": {
+    "uploadError": "Please provide an avatar",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "fieldRequired": "Field is required!",
+    "chooseOperator": "Please choose an operator!",
+    "required": "Required!",
+    "filterExists": "Filter exists already!",
+    "nameRequired": "Name is Required",
+    "invalidEmail": "Invalid email",
+    "phoneNumberRequired": "Phone Number is Required",
+    "fileUploadFailed": "File upload failed:",
+    "emptyValues": "All values are empty, at least add one!",
+    "userDeleteWarning": "The user you are about to delete cannot be retrieved!",
+    "deleteConfirmation": "All selected users will be permanently deleted. Are you sure?"
+  },
+  "messages": {
+    "loginSuccess": "You Successfully logged in!",
+    "filterAddedSuccess": "Filter added successfully!",
+    "userAddedSuccess": "User added successfully!",
+    "fileUploadedSuccess": "File uploaded successfully!",
+    "userUpdatedSuccess": "User updated successfully!"
+  },
+  "main": {
+    "NotFound": "Page Not Found!",
+    "Go": "Go to Users"
+  },
+  "navbar": {
+    "Profile": "Profile",
+    "Dark mode": "Dark Mode",
+    "Logout": "Logout"
+  },
+  "sidebar": {
+    "Dashboard": "Dashboard",
+    "Users": "Users",
+    "Students": "Students",
+    "Teachers": "Teachers",
+    "Admins": "Admins",
+    "Courses": "Courses",
+    "Invoices": "Invoices"
+  },
+  "fields": {
+    "id": "ID",
+    "email": "Email",
+    "created_at": "Created At",
+    "updated_at": "Updated At",
+    "name": "Name",
+    "phone_number": "Phone Number",
+    "actions": "Actions",
+    "avatar": "Avatar",
+    "password": "Password"
+  },
+  "buttons": {
+    "newUser": "New User",
+    "filter": "Filter",
+    "columns": "Columns",
+    "filters": "Filters",
+    "login": "Login",
+    "reset": "Reset",
+    "submit": "Submit",
+    "create": "Create",
+    "addFilter": "Add filter",
+    "confirmDelete": "Confirm Delete",
+    "cancel": "Cancel"
+  },
+  "actions": {
+    "delete": "Delete",
+    "edit": "Edit",
+    "preview": "Preview",
+    "deleteSelected": "items",
+    "addFilter": "Add Filter"
+  },
+  "titles": {
+    "createNewUser": "Create New User",
+    "editUser": "Edit User",
+    "previewUser": "Preview User",
+    "login": "Login"
+  },
+  "filters": {
+    "id": {
+      "eq": "Equals",
+      "lt": "Less Than",
+      "gt": "Greater Than",
+      "lt&eq": "Less than or equals",
+      "gt&eq": "Greater than or equals"
+    },
+    "text": {
+      "eq": "Is",
+      "neq": "Is Not",
+      "ilike": "Contains",
+      "startWith": "Starts With",
+      "endWith": "Ends With"
+    },
+    "date": {
+      "eq": "Is",
+      "neq": "Is Not",
+      "lt": "Before",
+      "gt": "After"
+    }
+  }
+}
