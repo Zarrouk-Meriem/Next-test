@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
 				port: "1337",
 				pathname: "/uploads/**",
 			},
+			{
+				protocol: "http",
+				hostname: "pleasant-charity-bbfa6e4376.strapiapp.com",
+			},
 		],
 	},
 	webpack(config) {
