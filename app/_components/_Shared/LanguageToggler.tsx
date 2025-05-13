@@ -1,11 +1,8 @@
 "use client";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+
 const LanguageToggler = () => {
-	const {
-		// t,
-	} = useTranslation("translation");
 	const [open, setOpen] = useState(false);
 
 	return (
