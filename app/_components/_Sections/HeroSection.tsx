@@ -14,7 +14,9 @@ function HeroSection({ data }: { readonly data: HeroSectionProps }) {
 				<h1 className='text-4xl md:text-5xl font-semibold leading-tight'>
 					{heading}
 				</h1>
-				<p className='text-lg text-[#4E5566] leading-relaxed'>{subheading}</p>
+				<p className='text-lg text-[#4E5566] leading-relaxed w-[448px] '>
+					{subheading}
+				</p>
 				{link?.url && (
 					<Link
 						href={link.url as Url}
