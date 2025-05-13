@@ -22,7 +22,7 @@ function FeatureCourse({ feature }: { feature: CourseProps }) {
 	const colorTag = getTagColor(tag);
 
 	return (
-		<div className='flex  gap-[20px]  text-[#4E5566] border border-[#E9EAF0] w-fit  '>
+		<div className='flex  gap-[20px]  text-[#4E5566] border border-[#E9EAF0] w-fit [@media(max-width:1535px)]:w-[640px]  '>
 			<Image
 				alt={alternativeText ?? "alternative text"}
 				width={220}

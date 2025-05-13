@@ -9,8 +9,8 @@ function Companies({ data }: { readonly data: CompaniesSectionProps }) {
 	);
 	return (
 		<div>
-			<section className='container flex px-4 py-6 mx-auto md:px-6 lg:py-24 items-center justify-between '>
-				<div className='flex flex-col gap-[24px] w-[424px]  '>
+			<section className='container [@media(max-width:1300px)]:flex-col [@media(max-width:1300px)]:text-center  flex px-4 py-6 mx-auto md:px-6 lg:py-24 items-center justify-between '>
+				<div className='flex flex-col gap-[24px] w-[424px] [@media(max-width:1300px)]:items-center  '>
 					<h1 className='text-[32px] leading-[40px] font-[600] '>{heading}</h1>
 					<p className='text-[14px] leading-[22px] font-[400] w-[312px] text-[#6E7485] '>
 						{subheading}
@@ -25,7 +25,7 @@ function Companies({ data }: { readonly data: CompaniesSectionProps }) {
 							height={100}
 							src={getImageUrl(url as string)}
 							quality={100}
-							className='mx-[50px]'
+							className='mx-[50px] [@media(max-width:755px)]:mx-[20px]'
 						/>
 					))}
 				</div>

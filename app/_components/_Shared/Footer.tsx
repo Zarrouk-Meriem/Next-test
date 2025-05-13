@@ -10,9 +10,9 @@ import { GrInstagram } from "react-icons/gr";
 function Footer() {
 	return (
 		<div className='flex flex-col text-[#8C94A3]'>
-			<div className='py-[100px] [@media(max-width:1300px)]:flex-col [@media(max-width:1300px)]:text-center [@media(max-width:1300px)]:gap-[20px] px-[300px] flex gap-[136px] items-center border-b-2 border-b-[#363B4780] bg-[#1D2026] text-[white] '>
+			<div className='py-[100px] [@media(max-width:1300px)]:px-[100px] [@media(max-width:1300px)]:flex-col [@media(max-width:1300px)]:text-center [@media(max-width:1300px)]:gap-[20px] px-[300px] flex gap-[136px] items-center border-b-2 border-b-[#363B4780] bg-[#1D2026] text-[white] '>
 				<div className=' flex flex-col gap-[32px]  '>
-					<h1 className='text-[40px] leading-[50px] font-[600]'>
+					<h1 className='text-[40px] leading-[50px] font-[600] '>
 						Start learning with 67.1k students around the world.
 					</h1>
 					<div className='flex gap-[16px] [@media(max-width:1300px)]:justify-center '>
@@ -61,7 +61,7 @@ function Footer() {
 						Aliquam rhoncus ligula est, non pulvinar elit
 						<br /> convallis nec. Donec mattis odio at.
 					</p>
-					<div className='mt-[6px] flex gap-[12px]'>
+					<div className='mt-[6px] flex gap-[12px]  '>
 						<div className='bg-[#363B4766]'>
 							<FaFacebookF className='hover:bg-[#FF6636] cursor-pointer hover:[box-shadow:0px_6px_20px_0px_#CC522B80] transition-all p-[14px] shrink-0 size-[46px] text-[white] ' />
 						</div>
@@ -82,9 +82,9 @@ function Footer() {
 					</div>
 				</div>
 
-				<div className='flex gap-[24px] '>
-					<div className='flex flex-col gap-[20px] w-[200px] '>
-						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] '>
+				<div className='flex gap-[24px] [@media(max-width:755px)]:flex-col [@media(max-width:755px)]:gap-[30px]'>
+					<div className='flex flex-col gap-[20px] w-[200px] [@media(max-width:755px)]:gap-[10px] '>
+						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] [@media(max-width:755px)]:mb-[0px] '>
 							Top 4 Category
 						</p>
 						<ul className='flex flex-col gap-[8px] whitespace-nowrap'>
@@ -95,7 +95,7 @@ function Footer() {
 						</ul>
 					</div>
 					<div className='flex flex-col gap-[20px] w-[200px] '>
-						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] '>
+						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] [@media(max-width:755px)]:mb-[0px] '>
 							Quick Links
 						</p>
 						<ul className='flex flex-col gap-[8px] whitespace-nowrap'>
@@ -106,7 +106,7 @@ function Footer() {
 						</ul>
 					</div>
 					<div className='flex flex-col gap-[20px] w-[200px] '>
-						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] '>
+						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] [@media(max-width:755px)]:mb-[0px] '>
 							Support
 						</p>
 						<ul className='flex flex-col gap-[8px] whitespace-nowrap'>
@@ -116,8 +116,8 @@ function Footer() {
 							<li>Privacy Policy</li>
 						</ul>
 					</div>
-					<ul className='flex flex-col gap-[8px]'>
-						<p className='text-[14px] uppercase  text-[white]  font-[500] mb-[20px] '>
+					<ul className='flex flex-col gap-[8px] [@media(max-width:750px)]:items-center  '>
+						<p className='text-[14px] uppercase    text-[white]  font-[500] mb-[20px] [@media(max-width:755px)]:mb-[0px] '>
 							Download our app
 						</p>
 						<Image
@@ -126,7 +126,7 @@ function Footer() {
 							width={163}
 							src={"/assets/Download our app (1).svg"}
 							alt='logo'
-							className='p-[14px] cursor-pointer'
+							className='p-[14px] [@media(max-width:750px)]:p-[8px] cursor-pointer'
 						/>
 						<Image
 							priority
@@ -134,12 +134,12 @@ function Footer() {
 							width={163}
 							src={"/assets/Download our app.svg"}
 							alt='logo'
-							className='p-[14px]   cursor-pointer'
+							className='p-[14px] [@media(max-width:750px)]:p-[8px]   cursor-pointer'
 						/>
 					</ul>
 				</div>
 			</div>
-			<div className='flex  px-[300px]  px-auto md:px-6 lg:py-6 bg-[#1D2026] [@media(max-width:1300px)]:text-center justify-center text-left '>
+			<div className='flex  px-[300px]  px-auto md:px-6 lg:py-6 bg-[#1D2026] [@media(max-width:1300px)]:text-center  justify-center text-left whitespace-nowrap [@media(max-width:755px)]:px-[0]'>
 				© 2021 - Eduflex. Designed by
 				<b className='text-white ml-1'>Templatecookie</b> . All rights reserved
 			</div>

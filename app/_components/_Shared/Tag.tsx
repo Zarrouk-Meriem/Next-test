@@ -11,7 +11,7 @@ function Tag({
 				backgroundColor: colorTag.bg,
 				color: colorTag.text,
 			}}
-			className={`pt-1 pr-[6px] pb-1 pl-[6px] text-[10px]  font-[500]  `}
+			className={`pt-1 pr-[6px] pb-1 pl-[6px] text-[10px]  font-[500]   `}
 		>
 			{tag.toUpperCase()}
 		</span>

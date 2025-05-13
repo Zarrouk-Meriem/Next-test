@@ -1,37 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import type { Url } from "next/dist/shared/lib/router/router";
 import type { HeroSectionProps } from "@/app/_types/heroSection";
+import { getImageUrl } from "@/app/_lib/utils";
 
 function HeroSection({ data }: { readonly data: HeroSectionProps }) {
 	const { heading, subheading, image, link } = data;
-	const imageURL = "http://localhost:1337" + image?.url;
+
 	return (
-		<section className=' flex px-4 py-6 mx-auto md:px-6 lg:py-24 gap-[40px]  items-center justify-end overflow-hidden lg:pt-0 pt-0 '>
-			<div className='flex flex-col gap-[32px] justify-center pl-[50px] w-[550px] '>
-				<h1 className='text-[52px] leading-[50px] font-[600]'>{heading}</h1>
-				<p className='text-[18px] w-[450px] font-[400] leading-[25px] text-[#4E5566]'>
-					{subheading}
-				</p>
-				<Link
-					href={link?.url as Url}
-					className='text-[16px] px-[22px] py-[12px] text-white hover:[box-shadow:0px_6px_20px_0px_#cc532b4b] bg-[#FF6636] self-baseline font-[600]'
-				>
-					{link?.text}
-				</Link>
+		<section className='flex flex-col-reverse  lg:flex-row items-center justify-between px-4 py-10 md:px-8 lg:py-24 gap-10 overflow-hidden pr-0 lg:pr-0  md:pr-0 [@media(max-width:1289px)]:pr-[16px]	'>
+			{/* Text Section */}
+			<div className='flex flex-col gap-8 justify-center max-w-xl w-full ml-[200px] [@media(max-width:1289px)]:ml-0 [@media(max-width:1289px)]:text-center '>
+				<h1 className='text-4xl md:text-5xl font-semibold leading-tight'>
+					{heading}
+				</h1>
+				<p className='text-lg text-[#4E5566] leading-relaxed'>{subheading}</p>
+				{link?.url && (
+					<Link
+						href={link.url as Url}
+						className='text-base px-6 py-3 text-white font-semibold bg-[#FF6636] hover:shadow-[0px_6px_20px_0px_#cc532b4b] w-fit  [@media(max-width:1289px)]:self-center '
+					>
+						{link.text}
+					</Link>
+				)}
 			</div>
-			<div className='relative flex items-end w-[50%] h-[550px]  '>
-				<div className='absolute w-[100%] h-[100%] top-[10px] left-[100px]'>
-					<Image
-						src={imageURL}
-						alt={image?.alternativeText ?? "no alternative text"}
-						quality={100}
-						priority
-						fill
-						className='w-[100%]'
-					/>
-				</div>
+
+			{/* Image Section */}
+			<div className='relative w-full lg:w-[50%] h-[400px] md:h-[500px] lg:h-[550px]'>
+				<Image
+					src={getImageUrl(String(image?.url))}
+					alt={image?.alternativeText ?? "Hero image"}
+					fill
+					className='object-cover   [@media(max-width:1289px)]:rounded-lg '
+					quality={100}
+					priority
+				/>
 			</div>
 		</section>
 	);

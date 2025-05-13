@@ -8,6 +8,11 @@ export interface IInstructor {
 	studentNum?: number;
 	rating?: number;
 }
+export interface IDetail {
+	id: number;
+	favourite: boolean;
+	youWillLearn: string;
+}
 export interface CourseProps {
 	id: number;
 	courseName: string;
@@ -20,6 +25,8 @@ export interface CourseProps {
 	estimatedTime: string;
 	instructor: IInstructor;
 	difficulty: string;
+	discount: number;
+	detail: IDetail;
 }
 
 export interface CoursesSectionProps {

@@ -9,7 +9,7 @@ function CoursesSection({ data }: { readonly data: CoursesSectionProps }) {
 				<h1 className='text-[40px] leading-[50px] font-[600] text-center'>
 					{heading}
 				</h1>
-				<div className='grid  self-center grid-cols-5  w-[100%] [@media(min-width:1373px)]:grid-cols-5 [@media(min-width:1024px)]:grid-cols-4 [@media(max-width:1024px)]:grid-cols-2  gap-[25px]'>
+				<div className='grid  self-center grid-cols-5 [@media(max-width:1300px)]:justify-items-center  w-[100%] [@media(min-width:1373px)]:grid-cols-5 [@media(min-width:1024px)]:grid-cols-4 [@media(max-width:1024px)]:grid-cols-2  gap-[25px]'>
 					{course?.map((course) => (
 						<Course key={course.image.documentId} course={course} />
 					))}

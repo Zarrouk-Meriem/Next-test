@@ -20,3 +20,10 @@ export function formatStudentNumber(value: number): string {
 export function getImageUrl(imageUrl: string) {
 	return String(getStrapiURL() + imageUrl);
 }
+export function formatPrice(price: number): string {
+	return new Intl.NumberFormat("en-US", {
+		style: "currency",
+		currency: "USD",
+		minimumFractionDigits: 2,
+	}).format(price);
+}

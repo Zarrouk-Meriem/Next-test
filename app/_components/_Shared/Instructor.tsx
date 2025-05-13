@@ -13,13 +13,16 @@ function Instructor({ instructor }: { instructor: IInstructor }) {
 	} = instructor;
 	return (
 		<div className='flex flex-col  w-[244px] text-[#4E5566]'>
-			<Image
-				alt={alternativeText ?? "instructor"}
-				width={244}
-				height={244}
-				src={getImageUrl(url as string)}
-				quality={100}
-			/>
+			<div className='overflow-hidden'>
+				<Image
+					alt={alternativeText ?? "instructor"}
+					width={244}
+					height={244}
+					src={getImageUrl(url as string)}
+					quality={100}
+					className='hover:[transform:scale(110%)] transition-transform duration-300 '
+				/>
+			</div>
 			<div className=' flex flex-col  text-[14px] border border-[#E9EAF0] border-t-0  '>
 				<div className='flex items-center justify-center border-b border-b-[#E9EAF0] '>
 					<div className='px-[16px] py-[12px]  flex flex-col gap-[4px] items-center justify-center'>

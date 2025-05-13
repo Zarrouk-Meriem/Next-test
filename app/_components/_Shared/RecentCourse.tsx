@@ -8,22 +8,32 @@ import Rating from "./Rating";
 function RecentCourse({
 	course,
 	studentIcon,
+	setClickedCourse,
 }: {
-	course: CourseProps;
+	course: CourseProps | null;
 	studentIcon?: boolean;
+	setClickedCourse: (course: CourseProps | null) => void;
 }) {
+	if (!course) return;
 	const { courseName, tag, rating, enrolledStudents, price, image } = course;
+
 	const colorTag = getTagColor(tag);
 	return (
-		<div className='flex flex-col gap-[14px]  w-[312px] text-[#4E5566]  '>
+		<div
+			onClick={() => setClickedCourse(course)}
+			className='flex flex-col gap-[14px]  w-[312px]   text-[#4E5566] hover:shadow-lg hover:-translate-y-1 cursor-pointer transition-all '
+		>
 			{image && (
-				<Image
-					alt={image?.alternativeText ?? "alternative text"}
-					width={312}
-					height={183}
-					src={getImageUrl(String(image?.url))}
-					quality={100}
-				/>
+				<div className='overflow-hidden'>
+					<Image
+						alt={image?.alternativeText ?? "alternative text"}
+						width={312}
+						height={183}
+						src={getImageUrl(String(image?.url))}
+						quality={100}
+						className='transition-transform duration-300 ease-in-out hover:scale-105'
+					/>
+				</div>
 			)}
 			<div className='flex flex-col border border-[#E9EAF0] border-t-0'>
 				<div className='gap-[8px] flex flex-col p-[14px] pt-0 text-[14px] '>
