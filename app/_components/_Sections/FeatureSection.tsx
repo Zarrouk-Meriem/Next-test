@@ -28,7 +28,7 @@ function FeatureSection({ data }: { readonly data: FeatureSectionProps }) {
 				</header>
 				<div className='grid  self-center grid-cols-2  [@media(max-width:1373px)]:grid-cols-1 justify-between  [@media(max-width:1373px)]:justify-items-center  grid-rows-[188px_188px] gap-x-[150px] gap-y-[50px] w-[-webkit-fill-available]'>
 					{feature?.map((feature) => (
-						<FeatureCourse key={feature.image.documentId} feature={feature} />
+						<FeatureCourse key={JSON.stringify(feature)} feature={feature} />
 					))}
 				</div>
 			</section>

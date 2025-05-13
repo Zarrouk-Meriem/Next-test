@@ -16,7 +16,7 @@ function CategoriesSection({
 	const { footer, category, heading } = data;
 
 	return (
-		<div className='flex-1 '>
+		<div key={6856767} className='flex-1 '>
 			<section className='container flex flex-col px-4 py-6 mx-auto md:px-6 lg:py-24 gap-[40px] justify-center '>
 				<h1 className='text-[40px] leading-[50px] font-[600] text-center'>
 					{heading}

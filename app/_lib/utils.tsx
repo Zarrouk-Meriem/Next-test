@@ -18,7 +18,7 @@ export function formatStudentNumber(value: number): string {
 	return value.toString();
 }
 export function getImageUrl(imageUrl: string) {
-	return String(getStrapiURL() + imageUrl);
+	return String(imageUrl);
 }
 export function formatPrice(price: number): string {
 	return new Intl.NumberFormat("en-US", {

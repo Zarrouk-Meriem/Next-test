@@ -10,8 +10,12 @@ const nextConfig: NextConfig = {
 				pathname: "/uploads/**",
 			},
 			{
-				protocol: "http",
+				protocol: "https",
 				hostname: "pleasant-charity-bbfa6e4376.strapiapp.com",
+			},
+			{
+				protocol: "https",
+				hostname: "pleasant-charity-bbfa6e4376.media.strapiapp.com",
 			},
 		],
 	},

@@ -146,7 +146,9 @@ function blockRenderer(
 ) {
 	const Component =
 		blockComponents[block.__component as keyof typeof blockComponents];
-	return Component ? <Component key={block.id} data={block} /> : null;
+	return Component ? (
+		<Component key={JSON.stringify(block)} data={block} />
+	) : null;
 }
 async function page() {
 	const { data } = await getStrapiData("/api/home-page");
