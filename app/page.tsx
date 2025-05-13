@@ -19,6 +19,7 @@ import type { BecomeInstructorSectionProps } from "./_types/becomeAnInstructor";
 import type { FeatureSectionProps } from "./_types/featureSection";
 import RecentAddedCourses from "./_components/_Sections/RecentAddedCoursesSection";
 import type { RecentCoursesSectionProps } from "./_types/recentAddedCoursesSection";
+import { getStrapiURL } from "./_lib/utils";
 const homePageQuery = qs.stringify({
 	populate: {
 		blocks: {
@@ -110,8 +111,7 @@ const homePageQuery = qs.stringify({
 });
 
 async function getStrapiData(path: string) {
-	const baseURL = "http://localhost:1337";
-	const url = new URL(path, baseURL);
+	const url = new URL(path, getStrapiURL());
 	url.search = homePageQuery;
 	try {
 		const res = await fetch(url.href);
